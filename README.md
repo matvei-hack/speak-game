@@ -1,17 +1,59 @@
-# speak-game
-my first eanglish game
+🔊 1. Установка библиотек для распознавания речи
 
+Выполните команду:
 
-# speak-game
-my first eanglish game
-это мой первый проект и вот как его запускать и какие библеотеки надо делал на федора линукс поэтому команды для этого диструбутива
-все делать в консоли!!
+sudo dnf install -y portaudio portaudio-devel alsa-lib-devel
 
+⚠️ После ввода команды система попросит ввести ваш sudo-пароль.
 
-sudo dnf install -y portaudio portaudio-devel alsa-lib-devel устоновить библеотеку для речи попросят вести ваш судо пароль
-cd ~/Desktop/имя проекта как вы назвали это перекидывает чтобы вы могли работать в папке вашего проекта
-rm -rf venv удалить вэнв если увас был чтобы без ошибок
-python3.13 -m venv venv создаете новый вэнв 3.13
-source venv/bin/activate активируйте вэнв
-pip install sounddevice scipy numpy SpeechRecognition deep-translator устоновим все библеотеки
-python main.py запуст кода
+📂 2. Перейдите в папку проекта
+
+Замените имя_проекта на название вашей папки:
+
+cd ~/Desktop/имя_проекта
+
+📁 Эта команда перенесёт вас в директорию проекта.
+
+🗑️ 3. Удалите старое виртуальное окружение (если оно есть)
+rm -rf venv
+
+✨ Это поможет избежать возможных ошибок со старыми зависимостями.
+
+🐍 4. Создайте новое виртуальное окружение Python 3.13
+python3.13 -m venv venv
+✅ 5. Активируйте виртуальное окружение
+source venv/bin/activate
+
+После активации вы увидите (venv) в начале строки терминала.
+
+📦 6. Установите все необходимые библиотеки
+pip install sounddevice scipy numpy SpeechRecognition deep-translator
+
+Будут установлены следующие библиотеки:
+
+🎤 sounddevice
+📊 scipy
+🔢 numpy
+🗣️ SpeechRecognition
+🌍 deep-translator
+🚀 7. Запуск игры
+python main.py
+
+🎉 Готово! Игра должна запуститься.
+
+⚡ Быстрая установка (все команды подряд)
+sudo dnf install -y portaudio portaudio-devel alsa-lib-devel
+
+cd ~/Desktop/имя_проекта
+
+rm -rf venv
+
+python3.13 -m venv venv
+
+source venv/bin/activate
+
+pip install sounddevice scipy numpy SpeechRecognition deep-translator
+
+python main.py
+
+🎮 Приятной игры и удачи в изучении английского языка! 🇬🇧✨
